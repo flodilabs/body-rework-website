@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Delete Account — Body ReWork</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="navMint" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3DF0B5"/><stop offset="55%" stop-color="#2EE5A8"/><stop offset="100%" stop-color="#0FB57F"/></linearGradient>
+            <linearGradient id="navShine" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.28"/><stop offset="50%" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+          </defs>
+          <rect width="1024" height="1024" fill="url(#navMint)"/>
+          <rect width="1024" height="512" fill="url(#navShine)"/>
+          <g transform="translate(102, 102) scale(22.78)"><path fill="#FFFFFF" d="M22.242 22.242l2.829 2.829c-3.905 3.905-10.237 3.904-14.143-.001-2.247-2.246-3.194-5.296-2.854-8.225l-4.037.367c-.215 3.84 1.128 7.752 4.062 10.687 5.467 5.467 14.333 5.468 19.799 0l2.828 2.828.849-9.334-9.333.849zM27.899 8.1C22.431 2.633 13.568 2.633 8.1 8.1L5.272 5.272l-.849 9.334 9.334-.849-2.829-2.829c3.906-3.905 10.236-3.905 14.142 0 2.248 2.247 3.194 5.297 2.856 8.226l4.036-.366c.216-3.841-1.128-7.753-4.063-10.688z"/></g>
+          <g transform="translate(328, 328) scale(10.24)"><path fill="#EF9645" d="M15.977 9.36h3.789c.114-.191.147-.439.058-.673l-3.846-4.705V9.36z"/><path fill="#FFDC5D" d="M12.804 22.277c-.057-.349-.124-.679-.206-.973-.62-2.223-1.14-3.164-.918-5.494.29-1.584.273-4.763 4.483-4.268 1.112.131 2.843.927 3.834.91.567-.01.98-1.157 1.017-1.539.051-.526-.865-1.42-1.248-1.554-.383-.134-2.012-.631-2.681-.824-1.039-.301-.985-1.705-1.051-2.205-.031-.235.084-.467.294-.591.21-.124.375-.008.579.125l.885.648c.497.426-.874 1.24-.503 1.376 0 0 1.755.659 2.507.796.412.075 1.834-1.529 1.917-2.47.065-.74-3.398-4.083-5.867-5.381-.868-.456-1.377-.721-1.949-.694-.683.032-.898.302-1.748 1.03C8.302 4.46 4.568 11.577 4.02 13.152c-2.246 6.461-2.597 9.865-2.677 11.788-.049.59-.076 1.177-.076 1.758.065 0-1 5 0 6s5.326 1 5.326 1c10 3.989 28.57 2.948 28.57-7.233 0-12.172-18.813-10.557-22.359-4.188z"/><path fill="#EF9645" d="M20.63 32.078c-3.16-.332-5.628-1.881-5.767-1.97-.465-.297-.601-.913-.305-1.379s.913-.603 1.38-.308c.04.025 4.003 2.492 7.846 1.467 2.125-.566 3.867-2.115 5.177-4.601.258-.49.866-.676 1.351-.419.488.257.676.862.419 1.351-1.585 3.006-3.754 4.893-6.447 5.606-1.257.332-2.502.374-3.654.253z"/></g>
+        </svg>
+      </div>
+      <span class="brand-name">Body ReWork</span>
+    </a>
+    <div class="nav-links">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/support.html">Support</a>
+      <a href="/delete-account.html" class="active">Delete account</a>
+    </div>
+    <div class="lang-toggle">
+      <button id="lang-en" class="active" onclick="setLang('en')">EN</button>
+      <button id="lang-tr" onclick="setLang('tr')">TR</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ ENGLISH ============ -->
+<div lang="en">
+<p class="eyebrow">Account Deletion</p>
+<h1>Delete your Body ReWork account</h1>
+<p class="lead">You can permanently delete your Body ReWork account and all associated data at any time. There are two ways to do this.</p>
+
+<div class="callout callout-warning">
+  <strong>⚠️ This action is permanent</strong>
+  <p>Deleting your account will erase your profile, workout history, plan data, AI coach conversations, and all other personal data. <strong>This cannot be undone.</strong></p>
+</div>
+
+<h2>Option 1: Delete in the app (fastest)</h2>
+<p>This is the easiest way and the deletion is processed immediately.</p>
+<ol>
+  <li>Open the Body ReWork app on your phone</li>
+  <li>Tap <strong>Settings</strong> (gear icon in the top-right corner)</li>
+  <li>Scroll to the <strong>Account</strong> section</li>
+  <li>Tap <strong>Delete Account</strong></li>
+  <li>Confirm by typing "DELETE" and tapping the red button</li>
+</ol>
+<p>Your account and all data will be erased within 30 days.</p>
+
+<h2>Option 2: Request deletion by email</h2>
+<p>If you can't access the app (lost your phone, can't sign in, etc.), email us:</p>
+
+<div class="contact-box">
+  <h3>Send a deletion request</h3>
+  <p>Email <strong style="color: var(--text);">burakerolonline@gmail.com</strong> with the following information:</p>
+  <ul style="margin: 12px 0;">
+    <li>The email address linked to your account</li>
+    <li>The phrase: "I want to delete my Body ReWork account"</li>
+    <li>(Optional) The reason — helps us improve</li>
+  </ul>
+  <p style="font-size: 13.5px;">We'll confirm your identity and process the deletion within <strong>30 days</strong> from receiving your request. You'll get a confirmation email once deletion is complete.</p>
+</div>
+
+<h2>What gets deleted</h2>
+<ul>
+  <li>Your account record (email, name, authentication credentials)</li>
+  <li>Your fitness profile (age, weight, height, goals, body type, equipment, injuries)</li>
+  <li>Your workout plan and history</li>
+  <li>Your progress data (workouts completed, streaks, water/protein logs)</li>
+  <li>AI coach conversation history</li>
+  <li>Personalized analytics and preferences</li>
+</ul>
+
+<h2>What doesn't get deleted</h2>
+<ul>
+  <li><strong>Anonymous aggregate analytics</strong> — non-identifiable statistics (e.g., "X% of users in a given country use Feature Y") are not tied to your account and may be retained.</li>
+  <li><strong>Legal records</strong> — if we are legally required to keep certain transactional records (tax, billing), we retain only what's necessary, separately from your account.</li>
+  <li><strong>App Store / Play Store subscription</strong> — subscriptions are managed by Apple or Google. <strong>Deleting your account does NOT cancel your Premium subscription.</strong> You must cancel it separately:
+    <ul style="margin-top: 6px;">
+      <li><strong>iOS</strong>: Settings → Apple ID → Subscriptions → Body ReWork → Cancel</li>
+      <li><strong>Android</strong>: Play Store → Profile → Payments &amp; subscriptions → Subscriptions → Body ReWork → Cancel</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Timeline</h2>
+<ul>
+  <li><strong>Immediate</strong>: You are signed out and the account is marked for deletion.</li>
+  <li><strong>Within 24 hours</strong>: Your data is hidden from any app you sign into.</li>
+  <li><strong>Within 30 days</strong>: All personal data is permanently erased from our servers, including backups.</li>
+</ul>
+
+<h2>Before you go</h2>
+<p>If you're leaving because of a problem, please consider <a href="/support.html">contacting Support</a> first. We'd love to help you stay if we can.</p>
+<p>If you're concerned about privacy specifically, our <a href="/privacy.html">Privacy Policy</a> explains exactly what data we hold and how we use it.</p>
+
+<div class="callout callout-info">
+  <strong>Guest mode users</strong>
+  <p>If you've been using Body ReWork in Guest mode (without creating an account), your data is only stored on your device. To delete it, just uninstall the app — there's nothing on our servers.</p>
+</div>
+</div>
+
+
+<!-- ============ TÜRKÇE ============ -->
+<div lang="tr">
+<p class="eyebrow">Hesap Silme</p>
+<h1>Body ReWork hesabını sil</h1>
+<p class="lead">Body ReWork hesabını ve ilişkili tüm verileri istediğin zaman kalıcı olarak silebilirsin. Bunu yapmanın iki yolu var.</p>
+
+<div class="callout callout-warning">
+  <strong>⚠️ Bu işlem geri alınamaz</strong>
+  <p>Hesabını silmek profilini, antrenman geçmişini, plan verini, AI koç sohbetlerini ve diğer tüm kişisel verilerini silecek. <strong>Bu işlem geri alınamaz.</strong></p>
+</div>
+
+<h2>Seçenek 1: Uygulama içinden sil (en hızlı)</h2>
+<p>En kolay yol bu ve silme anında işlenir.</p>
+<ol>
+  <li>Telefonunda Body ReWork uygulamasını aç</li>
+  <li>Sağ üstteki <strong>Ayarlar</strong> (dişli ikonu) butonuna dokun</li>
+  <li><strong>Hesap</strong> bölümüne in</li>
+  <li><strong>Hesabımı Sil</strong> butonuna dokun</li>
+  <li>"SIL" yazarak ve kırmızı butona dokunarak onayla</li>
+</ol>
+<p>Hesabın ve tüm verilerin 30 gün içinde silinecek.</p>
+
+<h2>Seçenek 2: E-posta ile silme talebi</h2>
+<p>Uygulamaya erişemiyorsan (telefonunu kaybettin, giriş yapamıyorsun vb.) bize e-posta gönder:</p>
+
+<div class="contact-box">
+  <h3>Silme talebi gönder</h3>
+  <p>Şu bilgilerle <strong style="color: var(--text);">burakerolonline@gmail.com</strong> adresine e-posta gönder:</p>
+  <ul style="margin: 12px 0;">
+    <li>Hesabınla ilişkili e-posta adresi</li>
+    <li>Şu cümle: "Body ReWork hesabımı silmek istiyorum"</li>
+    <li>(Opsiyonel) Sebep — kendimizi geliştirmemize yardımcı olur</li>
+  </ul>
+  <p style="font-size: 13.5px;">Kimliğini doğrulayacak ve talebini aldıktan sonra <strong>30 gün içinde</strong> silmeyi işleyeceğiz. Silme tamamlandığında onay e-postası alacaksın.</p>
+</div>
+
+<h2>Silinen veriler</h2>
+<ul>
+  <li>Hesap kaydın (e-posta, ad, kimlik doğrulama bilgileri)</li>
+  <li>Fitness profilin (yaş, kilo, boy, hedefler, beden tipi, ekipman, yaralanmalar)</li>
+  <li>Antrenman planın ve geçmişin</li>
+  <li>İlerleme verilerin (tamamlanan antrenmanlar, seriler, su/protein logları)</li>
+  <li>AI koç sohbet geçmişi</li>
+  <li>Kişiselleştirilmiş analitikler ve tercihler</li>
+</ul>
+
+<h2>Silinmeyen veriler</h2>
+<ul>
+  <li><strong>Anonim toplu analitikler</strong> — kimliklendirilemez istatistikler (örn. "Belirli bir ülkedeki kullanıcıların X%'i Y özelliğini kullanıyor") hesabına bağlı değildir ve saklanabilir.</li>
+  <li><strong>Yasal kayıtlar</strong> — belirli işlem kayıtlarını (vergi, faturalama) saklamamız yasal olarak gerekiyorsa, hesabından ayrı olarak yalnızca gerekli olanı tutarız.</li>
+  <li><strong>App Store / Play Store aboneliği</strong> — abonelikler Apple veya Google tarafından yönetilir. <strong>Hesabını silmek Premium aboneliğini İPTAL ETMEZ.</strong> Onu ayrıca iptal etmen gerekir:
+    <ul style="margin-top: 6px;">
+      <li><strong>iOS</strong>: Ayarlar → Apple ID → Abonelikler → Body ReWork → İptal Et</li>
+      <li><strong>Android</strong>: Play Store → Profil → Ödemeler ve abonelikler → Abonelikler → Body ReWork → İptal Et</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Zaman çizelgesi</h2>
+<ul>
+  <li><strong>Anında</strong>: Çıkış yapılır ve hesap silinmek üzere işaretlenir.</li>
+  <li><strong>24 saat içinde</strong>: Verilerin oturum açtığın hiçbir uygulamada görünmez.</li>
+  <li><strong>30 gün içinde</strong>: Tüm kişisel verin, yedekler dahil, sunucularımızdan kalıcı olarak silinir.</li>
+</ul>
+
+<h2>Gitmeden önce</h2>
+<p>Bir sorun nedeniyle ayrılıyorsan, lütfen önce <a href="/support.html">Destek ile iletişime geçmeyi</a> düşün. Yardım edebileceksek seninle kalmayı çok isteriz.</p>
+<p>Özellikle gizlilik konusunda endişen varsa, <a href="/privacy.html">Gizlilik Politikamız</a> hangi verileri tuttuğumuzu ve nasıl kullandığımızı tam olarak açıklar.</p>
+
+<div class="callout callout-info">
+  <strong>Misafir modu kullanıcıları</strong>
+  <p>Body ReWork'ü Misafir modunda (hesap oluşturmadan) kullanıyorsan, verilerin yalnızca cihazında saklanır. Silmek için uygulamayı kaldır — sunucularımızda hiçbir şey yok.</p>
+</div>
+</div>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <p>© <span id="year">2026</span> Body ReWork. <span lang="en">All rights reserved.</span><span lang="tr">Tüm hakları saklıdır.</span></p>
+  </div>
+</footer>
+
+<script>
+function setLang(l) {
+  document.documentElement.lang = l;
+  document.getElementById('lang-en').classList.toggle('active', l === 'en');
+  document.getElementById('lang-tr').classList.toggle('active', l === 'tr');
+  localStorage.setItem('lang', l);
+}
+const saved = localStorage.getItem('lang');
+if (saved === 'tr') setLang('tr');
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
