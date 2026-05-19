@@ -45,141 +45,81 @@
 <div lang="en">
 <p class="eyebrow">Privacy Policy</p>
 <h1>How we handle your data</h1>
-<p class="lead">Body ReWork is a personal fitness app. We collect the minimum data needed to give you a personalized program and we never sell anything to advertisers. This policy explains exactly what we collect, why, and what you can do about it.</p>
+<p class="lead">Body ReWork is a personal fitness app. <strong>Everything stays on your device.</strong> We don't have user accounts, we don't have a server, and we don't collect or transmit any of your information. This policy explains exactly how that works.</p>
 
 <div class="meta">
   <span class="meta-pill">Last updated: <strong>May 19, 2026</strong></span>
   <span class="meta-pill">Effective: <strong>May 19, 2026</strong></span>
 </div>
 
+<div class="callout callout-info">
+  <p style="margin: 0;"><strong>The short version:</strong> Body ReWork has no accounts, no analytics, no advertising, and no backend server. Your profile, workout plans, and progress are stored only on your phone. The only optional network call is the AI Coach — and that only happens if you choose to add your own free Gemini API key in Settings.</p>
+</div>
+
 <div class="toc">
   <div class="toc-title">Contents</div>
   <ol>
-    <li><a href="#data-we-collect">What data we collect</a></li>
-    <li><a href="#how-we-use">How we use it</a></li>
+    <li><a href="#what-stays-local">What stays on your device</a></li>
+    <li><a href="#what-we-collect">What we collect (nothing)</a></li>
+    <li><a href="#ai-coach">AI Coach (optional, BYOK)</a></li>
     <li><a href="#third-parties">Third-party services</a></li>
-    <li><a href="#ai-disclosure">AI processing disclosure</a></li>
-    <li><a href="#data-storage">Where your data lives</a></li>
-    <li><a href="#your-rights">Your rights (GDPR, CCPA, KVKK)</a></li>
+    <li><a href="#your-rights">Your rights</a></li>
     <li><a href="#children">Children's privacy</a></li>
     <li><a href="#changes">Changes to this policy</a></li>
     <li><a href="#contact">Contact us</a></li>
   </ol>
 </div>
 
-<h2 id="data-we-collect">1. What data we collect</h2>
-
-<h3>Account information</h3>
-<p>When you create an account, we collect:</p>
+<h2 id="what-stays-local">1. What stays on your device</h2>
+<p>Body ReWork keeps the following information in local storage (Hive boxes and Apple-encrypted preferences) on your phone. It is <strong>never</strong> sent to us or to any other server.</p>
 <ul>
-  <li><strong>Email address</strong> (from Apple Sign-In, Google Sign-In, or email signup)</li>
-  <li><strong>Display name</strong> (optional, you provide it)</li>
-  <li><strong>Authentication tokens</strong> (managed by Firebase Authentication)</li>
+  <li><strong>Profile</strong>: age, gender, height, weight, target weight, fitness goals, experience level, equipment, injuries, daily-minutes target, weeks target.</li>
+  <li><strong>Workout plan</strong>: your active 7-day program (exercises, sets, reps).</li>
+  <li><strong>Progress</strong>: completed workouts, weight check-ins, water and protein logs.</li>
+  <li><strong>Preferences</strong>: language, theme, notification opt-in.</li>
+  <li><strong>Optional API key</strong>: if you add your own Gemini API key to enable AI Coach, it stays in your phone's secure preferences storage (Keychain on iOS).</li>
 </ul>
+<p>Uninstalling the app or using the "Clear my data" button in Settings deletes all of this. There is no backup we hold — once it's gone from your device, it's gone.</p>
 
-<h3>Fitness profile (you choose to share)</h3>
-<p>To generate your personalized program, the app asks for:</p>
+<h2 id="what-we-collect">2. What we collect</h2>
+<p><strong>Nothing.</strong> Body ReWork has no servers, no accounts, no analytics SDKs, no crash reporting tied to user identifiers, and no advertising. We literally do not have a database that contains your information.</p>
+<p>The app also does not use the App Tracking Transparency framework because we do not track you — there's no IDFA collection, no cross-app behaviour profile, no marketing attribution.</p>
+
+<h2 id="ai-coach">3. AI Coach (optional, Bring-Your-Own-Key)</h2>
+<p>The AI Coach feature is optional. To enable it, you paste your own free Gemini API key (from Google's AI Studio) into Settings. When you send a message to the AI Coach:</p>
 <ul>
-  <li><strong>Age, gender, height, weight, target weight</strong> — used to compute BMI, BMR, and TDEE</li>
-  <li><strong>Fitness goals</strong> — lose fat, build muscle, etc.</li>
-  <li><strong>Body type preference</strong> — athletic, muscular, lean, toned</li>
-  <li><strong>Activity level and equipment available</strong></li>
-  <li><strong>Listed injuries</strong> (optional) — used so the AI avoids contraindicated exercises</li>
-  <li><strong>Time available per session</strong></li>
+  <li>The message and a small profile context (your goals, level, equipment) are sent <strong>directly from your phone to Google's Gemini API</strong> using your own API key.</li>
+  <li>That request never passes through any server we control. We don't see it, log it, or store it.</li>
+  <li>Google's handling of the request is governed by their own terms and privacy policy at <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</li>
+  <li>You can disable AI Coach any time by removing your API key in Settings.</li>
 </ul>
+<p>If you don't add a key, AI Coach stays disabled and your workout plans are generated by a local template-based algorithm with no network calls at all.</p>
 
-<h3>Activity & progress data</h3>
+<h2 id="third-parties">4. Third-party services</h2>
+<p>Body ReWork v1.0 includes <strong>zero third-party SDKs that collect data</strong>. No Firebase, no Google Analytics, no advertising networks, no crash reporters that ping a server.</p>
+<p>The only external service that may be contacted is Google's Gemini API, and only when you choose to enable AI Coach with your own key, as described above.</p>
+
+<h2 id="your-rights">5. Your rights</h2>
+<p>Because we don't have your data, there's nothing on our side to access, correct, or delete. You have full control directly through the app:</p>
 <ul>
-  <li>Completed workouts, sets, reps, time tracked</li>
-  <li>Daily water and protein intake (if you log them)</li>
-  <li>Streak count and workout history</li>
+  <li><strong>View your data</strong>: it's all visible inside the app (Profile, Plan, Progress screens).</li>
+  <li><strong>Export your data</strong>: Settings → "Export my data" copies a JSON snapshot to your clipboard.</li>
+  <li><strong>Delete your data</strong>: Settings → "Clear my data" wipes everything from your device. Uninstalling the app also clears everything (iOS) or after data-clearing (Android).</li>
 </ul>
+<p>These mechanisms satisfy GDPR (EU), CCPA (California), KVKK (Türkiye), and equivalent data-protection laws — because the data never leaves your device in the first place, the strictest legal requirement is already met.</p>
 
-<h3>Coach conversations (Premium only)</h3>
-<p>If you subscribe to Premium and use the AI Coach, your messages are sent to Google's Gemini API for processing. We do not store these conversations on our servers beyond what is shown in your chat history within the app itself.</p>
+<h2 id="children">6. Children's privacy</h2>
+<p>Body ReWork is not directed at children under 16. The app has an age gate at the start of onboarding that requires the user to confirm they are at least 16 years old. Since we don't collect any data, no parental consent mechanism is required by COPPA / GDPR — but we still ask the age question to set a sensible expectation for the workout recommendations.</p>
 
-<h3>Technical data</h3>
-<ul>
-  <li><strong>Device info</strong>: model, OS version, app version (for crash diagnostics)</li>
-  <li><strong>Locale & language preference</strong> (so we show the correct language)</li>
-  <li><strong>App usage events</strong> via Firebase Analytics (anonymized)</li>
-</ul>
+<h2 id="changes">7. Changes to this policy</h2>
+<p>If we make material changes (for example, if a future version of the app introduces optional features that require any data sharing), we will update this policy and inside the app, with a clear notice on first launch. The "Last updated" date at the top will change to reflect this.</p>
 
-<div class="callout callout-info">
-  <strong>We do NOT collect:</strong>
-  <p>Location, photos, contacts, microphone audio, camera images, advertising identifiers (IDFA), web browsing history, biometric data, or financial information beyond what Apple/Google IAP handles directly.</p>
-</div>
-
-<h2 id="how-we-use">2. How we use your data</h2>
-<ul>
-  <li><strong>Generate your personalized program</strong> — your fitness profile is sent to Google's Gemini AI to build a weekly workout schedule.</li>
-  <li><strong>Track your progress</strong> — workout history is stored so you can see your streak and improvements over time.</li>
-  <li><strong>Sync across devices</strong> — your profile and progress sync via Firebase Firestore when signed in.</li>
-  <li><strong>Provide AI coaching</strong> (Premium only) — your questions and fitness context go to Gemini AI for personalized responses.</li>
-  <li><strong>Improve the app</strong> — anonymized analytics tell us which features are used and where bugs occur.</li>
-  <li><strong>Comply with laws</strong> — keep records as required by tax, consumer, and data protection regulations.</li>
-</ul>
-
-<p>We do <strong>not</strong> sell your data, use it for advertising, or share it with data brokers. There are no third-party advertising trackers in Body ReWork.</p>
-
-<h2 id="third-parties">3. Third-party services we use</h2>
-
-<h3>Firebase (Google LLC)</h3>
-<p>Authentication, Firestore database, and crash reporting. Your data is stored in Firebase data centers (US/EU). <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></p>
-
-<h3>Google Gemini API</h3>
-<p>AI-powered program generation and coach chat. Your fitness profile and chat messages are sent to Gemini for processing. Per Google's API terms, this data is not used to train their models. <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms</a></p>
-
-<h3>Apple Sign-In / Google Sign-In</h3>
-<p>Identity providers — we only receive your email and a stable user identifier. We never see your password.</p>
-
-<h3>Apple App Store / Google Play Billing</h3>
-<p>Payment processing for Premium subscriptions. We do not see your credit card details — we only receive a receipt confirming an active subscription.</p>
-
-<h2 id="ai-disclosure">4. AI processing disclosure</h2>
-<div class="callout">
-  <strong>What you should know about AI in Body ReWork</strong>
-  <p>This app uses Google's Gemini AI to generate fitness programs and to power the optional Premium coach. AI outputs can be inaccurate, incomplete, or contextually wrong. Workout plans and coach responses are <strong>informational only and are not medical advice</strong>. Consult a qualified healthcare professional before starting any exercise program, especially if you have injuries or chronic conditions.</p>
-</div>
-
-<h2 id="data-storage">5. Where your data lives</h2>
-<ul>
-  <li><strong>On your device</strong> — your profile, plan, and progress are cached locally (via Hive). Even without internet, you can train.</li>
-  <li><strong>On Firebase Firestore</strong> — encrypted in transit (TLS 1.3) and at rest (AES-256). Located in Google Cloud regions.</li>
-  <li><strong>Guest mode</strong> — if you continue without an account, your data stays on your device only and never reaches our servers.</li>
-</ul>
-
-<h3>How long we keep your data</h3>
-<ul>
-  <li><strong>Active accounts</strong>: kept while your account exists.</li>
-  <li><strong>Deleted accounts</strong>: all personal data is erased within 30 days. Anonymous aggregate analytics may be retained.</li>
-  <li><strong>Inactive accounts</strong>: after 24 months of inactivity, we may reach out before deleting your data.</li>
-</ul>
-
-<h2 id="your-rights">6. Your rights</h2>
-<p>Depending on where you live, you have rights under GDPR (EU), CCPA (California), KVKK (Türkiye), and similar laws:</p>
-<ul>
-  <li><strong>Access</strong> — request a copy of your data (Settings → Export My Data, or email us)</li>
-  <li><strong>Correction</strong> — update inaccurate data in Settings → Edit Profile</li>
-  <li><strong>Deletion</strong> — delete your account in-app (Settings → Delete Account) or via <a href="/delete-account.html">this page</a></li>
-  <li><strong>Portability</strong> — your exported data is in standard JSON format</li>
-  <li><strong>Withdraw consent</strong> — opt out of analytics in Settings, or delete your account entirely</li>
-  <li><strong>Object to processing</strong> — contact us to discuss specific concerns</li>
-  <li><strong>Complain to a supervisory authority</strong> — your local data protection authority</li>
-</ul>
-
-<h2 id="children">7. Children's privacy</h2>
-<p>Body ReWork is intended for users <strong>16 years of age and older</strong>. We do not knowingly collect personal information from anyone under 16. If you become aware that a child has provided us with personal information, please contact us so we can delete it.</p>
-
-<h2 id="changes">8. Changes to this policy</h2>
-<p>We may update this Privacy Policy from time to time. Material changes will be notified through the app and the "Last updated" date above will be revised. Continued use of Body ReWork after changes means you accept the updated policy.</p>
-
-<h2 id="contact">9. Contact us</h2>
+<h2 id="contact">8. Contact us</h2>
 <div class="contact-box">
-  <h3>Data Protection Officer</h3>
-  <p>For privacy questions, data requests, or complaints:</p>
+  <h3>Data Protection Contact</h3>
+  <p>For privacy questions or anything related to this policy:</p>
   <p class="email">burakerolonline@gmail.com</p>
-  <p style="font-size: 13px; margin-top: 12px;">We respond within 30 days. For urgent issues, also reach out via <a href="/support.html">Support</a>.</p>
+  <p style="font-size: 13px; margin-top: 12px;">We aim to respond within 30 days.</p>
 </div>
 
 <div class="callout callout-info">
@@ -192,141 +132,81 @@
 <div lang="tr">
 <p class="eyebrow">Gizlilik Politikası</p>
 <h1>Verilerini nasıl ele alıyoruz</h1>
-<p class="lead">Body ReWork bir kişisel fitness uygulamasıdır. Sana kişiselleştirilmiş bir program sunmak için yalnızca gerekli minimum veriyi topluyoruz ve hiçbir şeyi reklamverenlere satmıyoruz. Bu politika tam olarak ne topladığımızı, neden topladığımızı ve haklarını açıklar.</p>
+<p class="lead">Body ReWork bir kişisel fitness uygulamasıdır. <strong>Her şey senin cihazında kalır.</strong> Hesap sistemimiz yok, sunucumuz yok, bilgilerinin hiçbirini toplamıyoruz ve aktarmıyoruz. Bu politika bunun nasıl işlediğini açıklar.</p>
 
 <div class="meta">
   <span class="meta-pill">Son güncelleme: <strong>19 Mayıs 2026</strong></span>
   <span class="meta-pill">Yürürlük tarihi: <strong>19 Mayıs 2026</strong></span>
 </div>
 
+<div class="callout callout-info">
+  <p style="margin: 0;"><strong>Kısa özet:</strong> Body ReWork'te hesap yok, analitik yok, reklam yok, sunucu yok. Profilin, antrenman planın ve ilerleme kayıtların yalnızca telefonunda saklanır. Tek opsiyonel ağ çağrısı AI Koç içindir — o da sadece kendi ücretsiz Gemini API anahtarını Ayarlar'a eklersen yapılır.</p>
+</div>
+
 <div class="toc">
   <div class="toc-title">İçindekiler</div>
   <ol>
-    <li><a href="#data-we-collect">Hangi verileri topluyoruz</a></li>
-    <li><a href="#how-we-use">Nasıl kullanıyoruz</a></li>
+    <li><a href="#what-stays-local">Cihazında kalanlar</a></li>
+    <li><a href="#what-we-collect">Topladığımız veriler (yok)</a></li>
+    <li><a href="#ai-coach">AI Koç (opsiyonel, kendi anahtarın)</a></li>
     <li><a href="#third-parties">Üçüncü taraf servisler</a></li>
-    <li><a href="#ai-disclosure">Yapay zekâ işleme bilgisi</a></li>
-    <li><a href="#data-storage">Verilerin nerede saklanıyor</a></li>
-    <li><a href="#your-rights">Haklarınız (GDPR, CCPA, KVKK)</a></li>
+    <li><a href="#your-rights">Hakların</a></li>
     <li><a href="#children">Çocukların gizliliği</a></li>
-    <li><a href="#changes">Politika değişiklikleri</a></li>
+    <li><a href="#changes">Politikadaki değişiklikler</a></li>
     <li><a href="#contact">İletişim</a></li>
   </ol>
 </div>
 
-<h2 id="data-we-collect">1. Hangi verileri topluyoruz</h2>
-
-<h3>Hesap bilgileri</h3>
-<p>Hesap oluşturduğunda topladıklarımız:</p>
+<h2 id="what-stays-local">1. Cihazında kalanlar</h2>
+<p>Body ReWork aşağıdaki bilgileri telefonundaki yerel depolamada (Hive kutuları ve Apple tarafından şifrelenen tercih deposu) saklar. Hiçbir zaman bize veya başka bir sunucuya gönderilmez.</p>
 <ul>
-  <li><strong>E-posta adresi</strong> (Apple Sign-In, Google Sign-In veya e-posta kaydı ile)</li>
-  <li><strong>Görünür ad</strong> (opsiyonel, sen sağlarsın)</li>
-  <li><strong>Kimlik doğrulama tokenleri</strong> (Firebase Authentication tarafından yönetilir)</li>
+  <li><strong>Profil</strong>: yaş, cinsiyet, boy, kilo, hedef kilo, fitness hedefleri, deneyim seviyesi, ekipman, sakatlıklar, günlük dakika hedefi, hafta hedefi.</li>
+  <li><strong>Antrenman planı</strong>: aktif 7 günlük programın (egzersizler, set, tekrar).</li>
+  <li><strong>İlerleme</strong>: tamamlanan antrenmanlar, kilo ölçümleri, su ve protein kayıtları.</li>
+  <li><strong>Tercihler</strong>: dil, tema, bildirim onayı.</li>
+  <li><strong>Opsiyonel API anahtarı</strong>: AI Koç'u aktifleştirmek için Gemini API anahtarı eklersen, telefonunun güvenli tercih deposunda (iOS'ta Keychain) tutulur.</li>
 </ul>
+<p>Uygulamayı kaldırmak veya Ayarlar'daki "Verilerimi temizle" butonunu kullanmak hepsini siler. Bizde tuttuğumuz bir yedek yok — cihazından gittiğinde tamamen gitmiş olur.</p>
 
-<h3>Fitness profili (sen paylaşmayı seçiyorsun)</h3>
-<p>Kişiselleştirilmiş programını oluşturmak için uygulama şunları sorar:</p>
+<h2 id="what-we-collect">2. Topladığımız veriler</h2>
+<p><strong>Hiçbir şey.</strong> Body ReWork'ün sunucusu yok, hesap sistemi yok, analitik SDK'ları yok, kullanıcıyla ilişkili çökme raporlaması yok, reklamı yok. Bilgilerini tutan bir veritabanımız gerçekten mevcut değil.</p>
+<p>Uygulama ayrıca App Tracking Transparency çerçevesini kullanmaz — çünkü seni takip etmiyoruz: IDFA toplamı yok, uygulamalar arası davranış profili yok, pazarlama atıbasyonu yok.</p>
+
+<h2 id="ai-coach">3. AI Koç (opsiyonel, kendi anahtarın)</h2>
+<p>AI Koç özelliği opsiyoneldir. Aktifleştirmek için Google AI Studio'dan aldığın kendi ücretsiz Gemini API anahtarını Ayarlar'a yapıştırırsın. AI Koç'a mesaj gönderdiğinde:</p>
 <ul>
-  <li><strong>Yaş, cinsiyet, boy, kilo, hedef kilo</strong> — BKİ, BMH ve TDEE hesaplamak için</li>
-  <li><strong>Fitness hedefleri</strong> — yağ yakma, kas kazanma vb.</li>
-  <li><strong>Beden tipi tercihi</strong> — atletik, kaslı, yağsız, sıkı</li>
-  <li><strong>Aktivite seviyesi ve mevcut ekipman</strong></li>
-  <li><strong>Listelenen yaralanmalar</strong> (opsiyonel) — AI'nın kontrendike egzersizlerden kaçınması için</li>
-  <li><strong>Seans başına ayırabileceğin süre</strong></li>
+  <li>Mesaj ve küçük bir profil bağlamı (hedefler, seviye, ekipman) telefondan <strong>doğrudan Google Gemini API'sine</strong> kendi API anahtarınla gönderilir.</li>
+  <li>Bu istek bizim kontrol ettiğimiz hiçbir sunucudan geçmez. Onu görmüyoruz, kaydetmiyoruz, saklamıyoruz.</li>
+  <li>Google'ın bu isteği nasıl ele aldığı kendi şartlarına ve gizlilik politikasına tabidir: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>.</li>
+  <li>API anahtarını Ayarlar'dan istediğin zaman kaldırarak AI Koç'u devre dışı bırakabilirsin.</li>
 </ul>
+<p>Anahtar eklemezsen AI Koç devre dışı kalır ve antrenman planın hiç ağ çağrısı yapmadan yerel bir şablon algoritması ile oluşturulur.</p>
 
-<h3>Aktivite ve ilerleme verileri</h3>
+<h2 id="third-parties">4. Üçüncü taraf servisler</h2>
+<p>Body ReWork v1.0 <strong>veri toplayan sıfır üçüncü taraf SDK</strong> içerir. Firebase yok, Google Analytics yok, reklam ağı yok, sunucuya ping atan çökme raporlayıcısı yok.</p>
+<p>İletişim kurulabilecek tek dış servis Google'ın Gemini API'sidir ve yalnızca yukarıda anlatıldığı gibi sen kendi anahtarınla AI Koç'u aktifleştirdiğinde çağrılır.</p>
+
+<h2 id="your-rights">5. Hakların</h2>
+<p>Verilerin bizde olmadığı için bizim tarafımızda erişilecek, düzeltilecek veya silinecek bir şey yok. Tam kontrol uygulama içinden sende:</p>
 <ul>
-  <li>Tamamlanan antrenmanlar, setler, tekrarlar, süreler</li>
-  <li>Günlük su ve protein alımı (girdiğin takdirde)</li>
-  <li>Seri (streak) sayısı ve antrenman geçmişi</li>
+  <li><strong>Verilerini görüntüle</strong>: hepsi uygulamada görünür (Profil, Plan, İlerleme ekranları).</li>
+  <li><strong>Verilerini dışa aktar</strong>: Ayarlar → "Verilerimi dışa aktar" JSON kopyasını panoya kopyalar.</li>
+  <li><strong>Verilerini sil</strong>: Ayarlar → "Verilerimi temizle" cihazdaki her şeyi siler. Uygulamayı kaldırmak da her şeyi siler (iOS), Android'de veri temizleme sonrası.</li>
 </ul>
+<p>Bu mekanizmalar GDPR (AB), CCPA (Kaliforniya), KVKK (Türkiye) ve benzeri veri koruma yasalarını karşılar — çünkü veri zaten cihazından çıkmadığı için en katı yasal şart daha baştan karşılanmış olur.</p>
 
-<h3>Koç sohbetleri (yalnızca Premium)</h3>
-<p>Premium aboneliği alır ve AI Koç'u kullanırsan, mesajların işlemek için Google'ın Gemini API'sine gönderilir. Bu sohbetleri kendi sunucularımızda, uygulama içindeki sohbet geçmişinin gösterdiklerinin ötesinde saklamayız.</p>
+<h2 id="children">6. Çocukların gizliliği</h2>
+<p>Body ReWork 16 yaş altı çocuklara yönelik değildir. Onboarding'in başında bir yaş kapısı vardır ve kullanıcının en az 16 yaşında olduğunu onaylamasını ister. Veri toplamadığımız için COPPA / GDPR kapsamında bir ebeveyn izni mekanizması gerekmiyor — yine de antrenman önerileri için makul bir beklenti oluşturmak adına yaş sorusunu soruyoruz.</p>
 
-<h3>Teknik veriler</h3>
-<ul>
-  <li><strong>Cihaz bilgisi</strong>: model, işletim sistemi sürümü, uygulama sürümü (crash teşhisi için)</li>
-  <li><strong>Yerel ayarlar ve dil tercihi</strong> (doğru dili gösterebilmek için)</li>
-  <li><strong>Uygulama kullanım olayları</strong>, Firebase Analytics aracılığıyla (anonimleştirilmiş)</li>
-</ul>
+<h2 id="changes">7. Politikadaki değişiklikler</h2>
+<p>Maddi değişiklikler yaparsak (örneğin uygulamanın gelecek bir sürümünde herhangi bir veri paylaşımı gerektiren opsiyonel özellikler gelirse), bu politikayı ve uygulama içinde ilk açılışta net bir bildirim ile güncelleriz. En üstteki "Son güncelleme" tarihi bunu yansıtır.</p>
 
-<div class="callout callout-info">
-  <strong>Toplamadıklarımız:</strong>
-  <p>Konum, fotoğraflar, kişiler, mikrofon sesi, kamera görüntüleri, reklam tanımlayıcıları (IDFA), web tarama geçmişi, biyometrik veriler veya Apple/Google IAP'nin doğrudan işlediği dışında finansal bilgiler.</p>
-</div>
-
-<h2 id="how-we-use">2. Verilerini nasıl kullanıyoruz</h2>
-<ul>
-  <li><strong>Kişiselleştirilmiş programını oluşturmak</strong> — fitness profilin haftalık antrenman programı oluşturmak için Google Gemini AI'ya gönderilir.</li>
-  <li><strong>İlerlemeni takip etmek</strong> — serini ve zaman içindeki gelişimini görebilmen için antrenman geçmişin saklanır.</li>
-  <li><strong>Cihazlar arasında senkronizasyon</strong> — giriş yaptığında profil ve ilerlemen Firebase Firestore üzerinden senkronize olur.</li>
-  <li><strong>AI koçluğu sağlamak</strong> (yalnızca Premium) — soruların ve fitness bağlamın kişiselleştirilmiş yanıtlar için Gemini AI'ya gider.</li>
-  <li><strong>Uygulamayı geliştirmek</strong> — anonim analitikler hangi özelliklerin kullanıldığını ve hataların nerede meydana geldiğini söyler.</li>
-  <li><strong>Yasalara uymak</strong> — vergi, tüketici ve veri koruma düzenlemelerinin gerektirdiği kayıtları tutmak.</li>
-</ul>
-
-<p>Verilerini <strong>satmıyoruz</strong>, reklam için kullanmıyoruz veya veri komisyoncularıyla paylaşmıyoruz. Body ReWork içinde üçüncü taraf reklam takipçileri yoktur.</p>
-
-<h2 id="third-parties">3. Kullandığımız üçüncü taraf servisler</h2>
-
-<h3>Firebase (Google LLC)</h3>
-<p>Kimlik doğrulama, Firestore veritabanı ve crash raporlama. Verilerin Firebase veri merkezlerinde (ABD/AB) saklanır.</p>
-
-<h3>Google Gemini API</h3>
-<p>AI destekli program oluşturma ve koç sohbeti. Fitness profilin ve sohbet mesajların işlemek üzere Gemini'ye gönderilir. Google'ın API koşullarına göre bu veri modellerini eğitmek için kullanılmaz.</p>
-
-<h3>Apple Sign-In / Google Sign-In</h3>
-<p>Kimlik sağlayıcılar — yalnızca e-postanı ve sabit bir kullanıcı tanımlayıcısı alırız. Şifreni hiç görmeyiz.</p>
-
-<h3>Apple App Store / Google Play Billing</h3>
-<p>Premium abonelikler için ödeme işleme. Kredi kartı bilgilerini görmeyiz — yalnızca aktif bir aboneliği teyit eden bir fatura alırız.</p>
-
-<h2 id="ai-disclosure">4. Yapay zekâ işleme bilgisi</h2>
-<div class="callout">
-  <strong>Body ReWork'te AI hakkında bilmen gerekenler</strong>
-  <p>Bu uygulama fitness programları oluşturmak ve opsiyonel Premium koçu desteklemek için Google'ın Gemini AI'sını kullanır. AI çıktıları hatalı, eksik veya bağlam dışı olabilir. Antrenman planları ve koç yanıtları <strong>yalnızca bilgi amaçlıdır ve tıbbi tavsiye değildir</strong>. Herhangi bir egzersiz programına başlamadan önce, özellikle yaralanma veya kronik bir rahatsızlığın varsa, mutlaka bir sağlık uzmanına danış.</p>
-</div>
-
-<h2 id="data-storage">5. Verilerin nerede saklanıyor</h2>
-<ul>
-  <li><strong>Cihazında</strong> — profilin, planın ve ilerlemen yerel olarak (Hive aracılığıyla) cache'lenir. İnternet olmadan bile antrenman yapabilirsin.</li>
-  <li><strong>Firebase Firestore'da</strong> — aktarımda (TLS 1.3) ve durağan (AES-256) şifreli. Google Cloud bölgelerinde bulunur.</li>
-  <li><strong>Misafir modu</strong> — hesap açmadan devam edersen verin yalnızca cihazında kalır ve sunucularımıza hiç ulaşmaz.</li>
-</ul>
-
-<h3>Verileri ne kadar süre saklarız</h3>
-<ul>
-  <li><strong>Aktif hesaplar</strong>: hesabın var olduğu sürece saklanır.</li>
-  <li><strong>Silinen hesaplar</strong>: tüm kişisel veriler 30 gün içinde silinir. Anonim toplu analitikler saklanabilir.</li>
-  <li><strong>İnaktif hesaplar</strong>: 24 ay inaktiviteden sonra verileri silmeden önce sana ulaşabiliriz.</li>
-</ul>
-
-<h2 id="your-rights">6. Haklarınız</h2>
-<p>Yaşadığın yere bağlı olarak GDPR (AB), CCPA (Kaliforniya), KVKK (Türkiye) ve benzeri yasalar kapsamında haklara sahipsin:</p>
-<ul>
-  <li><strong>Erişim</strong> — verilerinin bir kopyasını iste (Ayarlar → Verilerimi Dışa Aktar veya bize e-posta gönder)</li>
-  <li><strong>Düzeltme</strong> — Ayarlar → Profili Düzenle ile hatalı verileri güncelle</li>
-  <li><strong>Silme</strong> — hesabını uygulama içinden (Ayarlar → Hesabımı Sil) veya <a href="/delete-account.html">bu sayfa üzerinden</a> sil</li>
-  <li><strong>Taşınabilirlik</strong> — dışa aktarılan verin standart JSON formatındadır</li>
-  <li><strong>Onayı geri çekme</strong> — Ayarlar'dan analitikten vazgeç veya hesabını tamamen sil</li>
-  <li><strong>İşlemeye itiraz</strong> — belirli endişeleri görüşmek için bizimle iletişime geç</li>
-  <li><strong>Denetleyici otoriteye şikayet</strong> — yerel veri koruma otoritene (Türkiye'de KVKK)</li>
-</ul>
-
-<h2 id="children">7. Çocukların gizliliği</h2>
-<p>Body ReWork <strong>16 yaş ve üzeri</strong> kullanıcılar için tasarlanmıştır. 16 yaşın altındaki kişilerden bilerek kişisel bilgi toplamayız. Bir çocuğun bize kişisel bilgi sağladığını fark edersen, silmemiz için lütfen bizimle iletişime geç.</p>
-
-<h2 id="changes">8. Politikadaki değişiklikler</h2>
-<p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama üzerinden bildirilecek ve yukarıdaki "Son güncelleme" tarihi yenilenecektir. Değişikliklerden sonra Body ReWork'ü kullanmaya devam etmen, güncellenmiş politikayı kabul ettiğin anlamına gelir.</p>
-
-<h2 id="contact">9. İletişim</h2>
+<h2 id="contact">8. İletişim</h2>
 <div class="contact-box">
-  <h3>Veri Koruma Sorumlusu</h3>
-  <p>Gizlilik soruları, veri talepleri veya şikayetler için:</p>
+  <h3>Veri Koruma İletişim</h3>
+  <p>Gizlilik soruları veya bu politikayla ilgili her şey için:</p>
   <p class="email">burakerolonline@gmail.com</p>
-  <p style="font-size: 13px; margin-top: 12px;">30 gün içinde yanıt veriyoruz. Acil sorunlar için <a href="/support.html">Destek</a> sayfasına da başvurabilirsin.</p>
+  <p style="font-size: 13px; margin-top: 12px;">30 gün içinde yanıtlamayı hedefliyoruz.</p>
 </div>
 
 <div class="callout callout-info">

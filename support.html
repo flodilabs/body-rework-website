@@ -56,22 +56,8 @@
 
 <h2>Frequently asked questions</h2>
 
-<h3>How do I cancel my Premium subscription?</h3>
-<p>Premium subscriptions are managed by Apple or Google, not by us. To cancel:</p>
-<ul>
-  <li><strong>iOS</strong>: Open Settings → tap your Apple ID at the top → Subscriptions → Body ReWork → Cancel</li>
-  <li><strong>Android</strong>: Open Play Store → Profile picture → Payments &amp; subscriptions → Subscriptions → Body ReWork → Cancel</li>
-</ul>
-<p>You'll keep Premium until the end of your current period.</p>
-
-<h3>How do I request a refund?</h3>
-<p>Refunds are also handled by Apple or Google. For Apple:</p>
-<ul>
-  <li>Go to <code>reportaproblem.apple.com</code></li>
-  <li>Sign in with your Apple ID</li>
-  <li>Find the Body ReWork purchase and request a refund</li>
-</ul>
-<p>For Google Play, request a refund through your Play Store order history within 48 hours of purchase.</p>
+<h3>Is Body ReWork free?</h3>
+<p>Yes — version 1.0 is completely free. There are no in-app purchases, no subscriptions, and no advertisements. To keep the shared free AI quota fair for everyone, the AI Coach is rate-limited to a reasonable number of messages per user per day.</p>
 
 <h3>My workout plan isn't loading. What do I do?</h3>
 <ul>
@@ -82,24 +68,20 @@
 </ul>
 
 <h3>How does the AI Coach work?</h3>
-<p>The AI Coach is powered by Google's Gemini. It knows your profile (age, goals, fitness level) and can answer questions about your training, nutrition, and recovery. Remember: <strong>AI responses are informational only — they are not medical advice</strong>. Always consult a healthcare professional for medical concerns.</p>
+<p>The AI Coach is powered by Google's Gemini API. You enable it by adding your own free API key in Settings → AI Coach API Key (a 3-minute one-time setup; the app walks you through it). It knows your profile (age, goals, fitness level) and can answer questions about your training, nutrition, and recovery. Remember: <strong>AI responses are informational only — they are not medical advice</strong>. Always consult a healthcare professional for medical concerns.</p>
 
-<h3>Can I use the app without an account?</h3>
-<p>Yes! Body ReWork has a <strong>Guest mode</strong>. Your data stays on your device only and never reaches our servers. You can create an account anytime to back up and sync your progress.</p>
+<h3>Do I need to sign up?</h3>
+<p>No — Body ReWork has no accounts at all. Your profile, workout plan, and progress are stored only on your device. There's nothing to sign up for and nothing to log in to.</p>
 
-<h3>How do I delete my account?</h3>
-<p>You have two options:</p>
-<ul>
-  <li><strong>In-app</strong>: Settings → Account → Delete Account</li>
-  <li><strong>By web request</strong>: Use the <a href="/delete-account.html">account deletion page</a></li>
-</ul>
-<p>Either method permanently erases your account and all associated data within 30 days.</p>
+<h3>How do I clear my data?</h3>
+<p>Open Settings → scroll to the bottom → tap <strong>Clear my data</strong>. This wipes your profile, plan, progress, preferences, and the AI Coach API key (if set). After confirmation the app resets to its first-launch state.</p>
+<p>Detailed steps and an alternative (uninstall) are documented at the <a href="/delete-account.html">data removal page</a>.</p>
 
 <h3>Why does the app ask for my age, weight, and height?</h3>
-<p>These are used to compute your BMI, BMR (basal metabolic rate), and TDEE (total daily energy expenditure). These figures help the AI generate a personalized program. We do not share this data with anyone.</p>
+<p>These are used to compute your BMI, BMR (basal metabolic rate), and TDEE (total daily energy expenditure). These figures help generate a personalized program. Your data stays on your device — we don't share it with anyone.</p>
 
 <h3>Does Body ReWork work offline?</h3>
-<p>Partially. Your existing workout plan and progress are cached on your device, so you can complete sessions and track your progress without internet. However, generating a <em>new</em> plan and using the AI Coach require an internet connection.</p>
+<p>Mostly yes. Your existing workout plan, exercise library, and progress are stored locally on your device, so you can complete sessions and track progress without internet. Only the AI Coach (and the AI plan-regeneration option, if you have an API key configured) needs internet. Without internet, plans are generated using a local algorithm.</p>
 
 <h3>The app crashed. What should I do?</h3>
 <p>Restart the app first. If it crashes again:</p>
@@ -149,22 +131,8 @@
 
 <h2>Sık sorulan sorular</h2>
 
-<h3>Premium aboneliğimi nasıl iptal ederim?</h3>
-<p>Premium abonelikleri biz değil, Apple veya Google tarafından yönetilir. İptal için:</p>
-<ul>
-  <li><strong>iOS</strong>: Ayarlar → üstteki Apple ID'ye dokun → Abonelikler → Body ReWork → İptal Et</li>
-  <li><strong>Android</strong>: Play Store → Profil resmi → Ödemeler ve abonelikler → Abonelikler → Body ReWork → İptal Et</li>
-</ul>
-<p>Mevcut dönemin sonuna kadar Premium devam eder.</p>
-
-<h3>Nasıl iade talep edebilirim?</h3>
-<p>İadeler de Apple veya Google tarafından işlenir. Apple için:</p>
-<ul>
-  <li><code>reportaproblem.apple.com</code>'a git</li>
-  <li>Apple ID'nle giriş yap</li>
-  <li>Body ReWork satın alımını bul ve iade talep et</li>
-</ul>
-<p>Google Play için, satın alma sonrası 48 saat içinde Play Store sipariş geçmişin üzerinden iade talep et.</p>
+<h3>Body ReWork ücretsiz mi?</h3>
+<p>Evet — 1.0 sürümü tamamen ücretsizdir. Uygulama içi satın alma, abonelik veya reklam yoktur. Paylaşılan ücretsiz AI kotasını herkes için adil tutmak adına, AI Koç kullanıcı başına günlük makul bir mesaj sayısı ile sınırlandırılmıştır.</p>
 
 <h3>Antrenman planım yüklenmiyor. Ne yapmalıyım?</h3>
 <ul>
@@ -177,22 +145,18 @@
 <h3>AI Koç nasıl çalışıyor?</h3>
 <p>AI Koç, Google'ın Gemini'si tarafından destekleniyor. Profilini (yaş, hedefler, fitness seviyesi) biliyor ve antrenman, beslenme ve toparlanma hakkındaki sorularını cevaplayabiliyor. Unutma: <strong>AI yanıtları yalnızca bilgi amaçlıdır — tıbbi tavsiye değildir</strong>. Tıbbi endişeler için her zaman bir sağlık uzmanına danış.</p>
 
-<h3>Hesap açmadan uygulamayı kullanabilir miyim?</h3>
-<p>Evet! Body ReWork'te <strong>Misafir modu</strong> var. Verilerin yalnızca cihazında kalır ve sunucularımıza hiç ulaşmaz. İlerlemen yedeklemek ve senkronize etmek için istediğin zaman hesap oluşturabilirsin.</p>
+<h3>Kayıt olmam gerekir mi?</h3>
+<p>Hayır — Body ReWork'te hesap sistemi hiç yok. Profilin, antrenman planın ve ilerlemen yalnızca cihazında saklanır. Kayıt olunacak bir şey yok ve giriş yapılacak bir hesap yok.</p>
 
-<h3>Hesabımı nasıl silerim?</h3>
-<p>İki seçeneğin var:</p>
-<ul>
-  <li><strong>Uygulama içinden</strong>: Ayarlar → Hesap → Hesabımı Sil</li>
-  <li><strong>Web isteği ile</strong>: <a href="/delete-account.html">hesap silme sayfasını</a> kullan</li>
-</ul>
-<p>Her iki yöntem de hesabını ve ilişkili tüm verileri 30 gün içinde kalıcı olarak siler.</p>
+<h3>Verilerimi nasıl temizlerim?</h3>
+<p>Ayarlar'ı aç → en aşağı kaydır → <strong>Verilerimi temizle</strong>'ye dokun. Bu profili, planı, ilerlemeyi, tercihleri ve (varsa) AI Koç API anahtarını siler. Onay sonrası uygulama ilk açılış durumuna döner.</p>
+<p>Ayrıntılı adımlar ve alternatif yöntem (uygulamayı kaldırma) için <a href="/delete-account.html">veri kaldırma sayfasına</a> bak.</p>
 
 <h3>Uygulama neden yaşımı, kilo ve boyumu soruyor?</h3>
-<p>Bunlar BKİ, BMH (bazal metabolizma hızı) ve TDEE (toplam günlük enerji harcaması) hesaplamak için kullanılır. Bu rakamlar AI'nın kişiselleştirilmiş bir program oluşturmasına yardımcı olur. Bu veriyi kimseyle paylaşmıyoruz.</p>
+<p>Bunlar BKİ, BMH (bazal metabolizma hızı) ve TDEE (toplam günlük enerji harcaması) hesaplamak için kullanılır. Bu rakamlar kişiselleştirilmiş bir program oluşturmaya yardımcı olur. Verilerin cihazında kalır — kimseyle paylaşmıyoruz.</p>
 
 <h3>Body ReWork çevrimdışı çalışır mı?</h3>
-<p>Kısmen. Mevcut antrenman planın ve ilerlemen cihazında cache'lenir, dolayısıyla internet olmadan seansları tamamlayabilir ve ilerlemeni takip edebilirsin. Ancak <em>yeni</em> bir plan oluşturmak ve AI Koç'u kullanmak için internet bağlantısı gerekir.</p>
+<p>Büyük ölçüde evet. Mevcut antrenman planın, egzersiz kütüphanesi ve ilerlemen cihazında yerel olarak saklanır, dolayısıyla internet olmadan seansları tamamlayabilir ve ilerlemeni takip edebilirsin. Yalnızca AI Koç (ve API anahtarın yapılandırılıysa AI plan-yeniden-oluşturma seçeneği) internet gerektirir. İnternet olmadığında planlar yerel bir algoritma ile oluşturulur.</p>
 
 <h3>Uygulama çöktü. Ne yapmalıyım?</h3>
 <p>Önce uygulamayı yeniden başlat. Tekrar çökerse:</p>

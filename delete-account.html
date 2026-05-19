@@ -43,152 +43,124 @@
 
 <!-- ============ ENGLISH ============ -->
 <div lang="en">
-<p class="eyebrow">Account Deletion</p>
-<h1>Delete your Body ReWork account</h1>
-<p class="lead">You can permanently delete your Body ReWork account and all associated data at any time. There are two ways to do this.</p>
+<p class="eyebrow">Account Deletion / Data Removal</p>
+<h1>How to delete your data</h1>
+<p class="lead">Body ReWork v1.0 doesn't have user accounts — there's no server-side account to delete. All your data is stored locally on your device. Here's how to remove it.</p>
 
-<div class="callout callout-warning">
-  <strong>⚠️ This action is permanent</strong>
-  <p>Deleting your account will erase your profile, workout history, plan data, AI coach conversations, and all other personal data. <strong>This cannot be undone.</strong></p>
+<div class="callout callout-info">
+  <p style="margin: 0;"><strong>Two simple options:</strong> Use the in-app "Clear my data" button (recommended) or uninstall the app. Either method wipes everything Body ReWork has stored.</p>
 </div>
 
-<h2>Option 1: Delete in the app (fastest)</h2>
-<p>This is the easiest way and the deletion is processed immediately.</p>
+<h2>Option A — Clear from inside the app (recommended)</h2>
+<p>This is the cleanest path because it gives you a confirmation step and immediately resets the app so the next person to use the device sees a fresh first-launch experience.</p>
 <ol>
-  <li>Open the Body ReWork app on your phone</li>
-  <li>Tap <strong>Settings</strong> (gear icon in the top-right corner)</li>
-  <li>Scroll to the <strong>Account</strong> section</li>
-  <li>Tap <strong>Delete Account</strong></li>
-  <li>Confirm by typing "DELETE" and tapping the red button</li>
+  <li>Open the Body ReWork app on your phone.</li>
+  <li>Tap the <strong>Settings</strong> tab (gear icon, bottom-right).</li>
+  <li>Scroll to the bottom and tap <strong>Clear my data</strong>.</li>
+  <li>Type <strong>DELETE</strong> in the confirmation box.</li>
+  <li>Tap the red <strong>Clear my data</strong> button.</li>
 </ol>
-<p>Your account and all data will be erased within 30 days.</p>
-
-<h2>Option 2: Request deletion by email</h2>
-<p>If you can't access the app (lost your phone, can't sign in, etc.), email us:</p>
-
-<div class="contact-box">
-  <h3>Send a deletion request</h3>
-  <p>Email <strong style="color: var(--text);">burakerolonline@gmail.com</strong> with the following information:</p>
-  <ul style="margin: 12px 0;">
-    <li>The email address linked to your account</li>
-    <li>The phrase: "I want to delete my Body ReWork account"</li>
-    <li>(Optional) The reason — helps us improve</li>
-  </ul>
-  <p style="font-size: 13.5px;">We'll confirm your identity and process the deletion within <strong>30 days</strong> from receiving your request. You'll get a confirmation email once deletion is complete.</p>
-</div>
-
-<h2>What gets deleted</h2>
+<p>The app will:</p>
 <ul>
-  <li>Your account record (email, name, authentication credentials)</li>
-  <li>Your fitness profile (age, weight, height, goals, body type, equipment, injuries)</li>
-  <li>Your workout plan and history</li>
-  <li>Your progress data (workouts completed, streaks, water/protein logs)</li>
-  <li>AI coach conversation history</li>
-  <li>Personalized analytics and preferences</li>
+  <li>Wipe your profile (age, weight, goals, etc.)</li>
+  <li>Wipe your active workout plan</li>
+  <li>Wipe all progress entries (completed workouts, weight logs)</li>
+  <li>Wipe your preferences (language, theme, AI Coach API key if set)</li>
+  <li>Return you to the language picker, just like a fresh install</li>
 </ul>
+
+<h2>Option B — Uninstall the app</h2>
+<p>If you can't open the app for any reason, uninstalling it from your phone removes all locally-stored data as well.</p>
+
+<h3>On iOS (iPhone / iPad)</h3>
+<ol>
+  <li>Long-press the Body ReWork app icon on your Home Screen.</li>
+  <li>Tap <strong>Remove App</strong> → <strong>Delete App</strong> → <strong>Delete</strong>.</li>
+</ol>
+
+<h3>On Android</h3>
+<ol>
+  <li>Long-press the Body ReWork app icon.</li>
+  <li>Tap <strong>App info</strong> (or the ⓘ icon).</li>
+  <li>Tap <strong>Storage &amp; cache</strong> → <strong>Clear storage</strong> (to wipe data while keeping the app), or back out and tap <strong>Uninstall</strong> (to remove the app entirely).</li>
+</ol>
+
+<h2>What about our servers?</h2>
+<p>There are no servers. Body ReWork has no backend, no database that holds your information, and no analytics service collecting events. The deletion methods above are the only places your data could exist — there's nothing else to delete.</p>
 
 <h2>What doesn't get deleted</h2>
 <ul>
-  <li><strong>Anonymous aggregate analytics</strong> — non-identifiable statistics (e.g., "X% of users in a given country use Feature Y") are not tied to your account and may be retained.</li>
-  <li><strong>Legal records</strong> — if we are legally required to keep certain transactional records (tax, billing), we retain only what's necessary, separately from your account.</li>
-  <li><strong>App Store / Play Store subscription</strong> — subscriptions are managed by Apple or Google. <strong>Deleting your account does NOT cancel your Premium subscription.</strong> You must cancel it separately:
-    <ul style="margin-top: 6px;">
-      <li><strong>iOS</strong>: Settings → Apple ID → Subscriptions → Body ReWork → Cancel</li>
-      <li><strong>Android</strong>: Play Store → Profile → Payments &amp; subscriptions → Subscriptions → Body ReWork → Cancel</li>
-    </ul>
-  </li>
+  <li><strong>The free Google Gemini API key</strong> (if you created one) — that key is registered with your own Google account at aistudio.google.com. If you want to revoke it, go to <a href="https://aistudio.google.com/app/apikey" target="_blank">aistudio.google.com/app/apikey</a> and delete it from there. (We don't have access to it; clearing the app simply removes the local copy.)</li>
+  <li><strong>App Store / Play Store install record</strong> — Apple and Google keep a record that you downloaded the app. This is normal and outside our control.</li>
 </ul>
 
-<h2>Timeline</h2>
-<ul>
-  <li><strong>Immediate</strong>: You are signed out and the account is marked for deletion.</li>
-  <li><strong>Within 24 hours</strong>: Your data is hidden from any app you sign into.</li>
-  <li><strong>Within 30 days</strong>: All personal data is permanently erased from our servers, including backups.</li>
-</ul>
-
-<h2>Before you go</h2>
-<p>If you're leaving because of a problem, please consider <a href="/support.html">contacting Support</a> first. We'd love to help you stay if we can.</p>
-<p>If you're concerned about privacy specifically, our <a href="/privacy.html">Privacy Policy</a> explains exactly what data we hold and how we use it.</p>
-
-<div class="callout callout-info">
-  <strong>Guest mode users</strong>
-  <p>If you've been using Body ReWork in Guest mode (without creating an account), your data is only stored on your device. To delete it, just uninstall the app — there's nothing on our servers.</p>
+<h2>Contact us</h2>
+<div class="contact-box">
+  <h3>Questions about data removal?</h3>
+  <p class="email">burakerolonline@gmail.com</p>
+  <p style="font-size: 13px; margin-top: 12px;">We aim to respond within 30 days.</p>
 </div>
 </div>
 
 
 <!-- ============ TÜRKÇE ============ -->
 <div lang="tr">
-<p class="eyebrow">Hesap Silme</p>
-<h1>Body ReWork hesabını sil</h1>
-<p class="lead">Body ReWork hesabını ve ilişkili tüm verileri istediğin zaman kalıcı olarak silebilirsin. Bunu yapmanın iki yolu var.</p>
-
-<div class="callout callout-warning">
-  <strong>⚠️ Bu işlem geri alınamaz</strong>
-  <p>Hesabını silmek profilini, antrenman geçmişini, plan verini, AI koç sohbetlerini ve diğer tüm kişisel verilerini silecek. <strong>Bu işlem geri alınamaz.</strong></p>
-</div>
-
-<h2>Seçenek 1: Uygulama içinden sil (en hızlı)</h2>
-<p>En kolay yol bu ve silme anında işlenir.</p>
-<ol>
-  <li>Telefonunda Body ReWork uygulamasını aç</li>
-  <li>Sağ üstteki <strong>Ayarlar</strong> (dişli ikonu) butonuna dokun</li>
-  <li><strong>Hesap</strong> bölümüne in</li>
-  <li><strong>Hesabımı Sil</strong> butonuna dokun</li>
-  <li>"SIL" yazarak ve kırmızı butona dokunarak onayla</li>
-</ol>
-<p>Hesabın ve tüm verilerin 30 gün içinde silinecek.</p>
-
-<h2>Seçenek 2: E-posta ile silme talebi</h2>
-<p>Uygulamaya erişemiyorsan (telefonunu kaybettin, giriş yapamıyorsun vb.) bize e-posta gönder:</p>
-
-<div class="contact-box">
-  <h3>Silme talebi gönder</h3>
-  <p>Şu bilgilerle <strong style="color: var(--text);">burakerolonline@gmail.com</strong> adresine e-posta gönder:</p>
-  <ul style="margin: 12px 0;">
-    <li>Hesabınla ilişkili e-posta adresi</li>
-    <li>Şu cümle: "Body ReWork hesabımı silmek istiyorum"</li>
-    <li>(Opsiyonel) Sebep — kendimizi geliştirmemize yardımcı olur</li>
-  </ul>
-  <p style="font-size: 13.5px;">Kimliğini doğrulayacak ve talebini aldıktan sonra <strong>30 gün içinde</strong> silmeyi işleyeceğiz. Silme tamamlandığında onay e-postası alacaksın.</p>
-</div>
-
-<h2>Silinen veriler</h2>
-<ul>
-  <li>Hesap kaydın (e-posta, ad, kimlik doğrulama bilgileri)</li>
-  <li>Fitness profilin (yaş, kilo, boy, hedefler, beden tipi, ekipman, yaralanmalar)</li>
-  <li>Antrenman planın ve geçmişin</li>
-  <li>İlerleme verilerin (tamamlanan antrenmanlar, seriler, su/protein logları)</li>
-  <li>AI koç sohbet geçmişi</li>
-  <li>Kişiselleştirilmiş analitikler ve tercihler</li>
-</ul>
-
-<h2>Silinmeyen veriler</h2>
-<ul>
-  <li><strong>Anonim toplu analitikler</strong> — kimliklendirilemez istatistikler (örn. "Belirli bir ülkedeki kullanıcıların X%'i Y özelliğini kullanıyor") hesabına bağlı değildir ve saklanabilir.</li>
-  <li><strong>Yasal kayıtlar</strong> — belirli işlem kayıtlarını (vergi, faturalama) saklamamız yasal olarak gerekiyorsa, hesabından ayrı olarak yalnızca gerekli olanı tutarız.</li>
-  <li><strong>App Store / Play Store aboneliği</strong> — abonelikler Apple veya Google tarafından yönetilir. <strong>Hesabını silmek Premium aboneliğini İPTAL ETMEZ.</strong> Onu ayrıca iptal etmen gerekir:
-    <ul style="margin-top: 6px;">
-      <li><strong>iOS</strong>: Ayarlar → Apple ID → Abonelikler → Body ReWork → İptal Et</li>
-      <li><strong>Android</strong>: Play Store → Profil → Ödemeler ve abonelikler → Abonelikler → Body ReWork → İptal Et</li>
-    </ul>
-  </li>
-</ul>
-
-<h2>Zaman çizelgesi</h2>
-<ul>
-  <li><strong>Anında</strong>: Çıkış yapılır ve hesap silinmek üzere işaretlenir.</li>
-  <li><strong>24 saat içinde</strong>: Verilerin oturum açtığın hiçbir uygulamada görünmez.</li>
-  <li><strong>30 gün içinde</strong>: Tüm kişisel verin, yedekler dahil, sunucularımızdan kalıcı olarak silinir.</li>
-</ul>
-
-<h2>Gitmeden önce</h2>
-<p>Bir sorun nedeniyle ayrılıyorsan, lütfen önce <a href="/support.html">Destek ile iletişime geçmeyi</a> düşün. Yardım edebileceksek seninle kalmayı çok isteriz.</p>
-<p>Özellikle gizlilik konusunda endişen varsa, <a href="/privacy.html">Gizlilik Politikamız</a> hangi verileri tuttuğumuzu ve nasıl kullandığımızı tam olarak açıklar.</p>
+<p class="eyebrow">Hesap Silme / Veri Kaldırma</p>
+<h1>Verilerini nasıl silersin</h1>
+<p class="lead">Body ReWork v1.0'da kullanıcı hesabı yoktur — silinecek bir sunucu hesabı yok. Tüm verilerin yalnızca cihazında saklanıyor. İşte nasıl kaldıracağın.</p>
 
 <div class="callout callout-info">
-  <strong>Misafir modu kullanıcıları</strong>
-  <p>Body ReWork'ü Misafir modunda (hesap oluşturmadan) kullanıyorsan, verilerin yalnızca cihazında saklanır. Silmek için uygulamayı kaldır — sunucularımızda hiçbir şey yok.</p>
+  <p style="margin: 0;"><strong>İki basit seçenek:</strong> Uygulama içindeki "Verilerimi temizle" butonunu kullan (önerilen) veya uygulamayı kaldır. İki yöntem de Body ReWork'ün tuttuğu her şeyi siler.</p>
+</div>
+
+<h2>Seçenek A — Uygulamadan temizle (önerilen)</h2>
+<p>Bu en temiz yoldur çünkü sana bir onay adımı sunar ve uygulamayı anında sıfırlar; cihazı bir sonraki kullanan kişi taze bir ilk açılış deneyimi görür.</p>
+<ol>
+  <li>Telefonunda Body ReWork uygulamasını aç.</li>
+  <li>Alt sağdaki dişli simgesiyle <strong>Ayarlar</strong> sekmesine dokun.</li>
+  <li>En aşağı kaydır ve <strong>Verilerimi temizle</strong>'ye dokun.</li>
+  <li>Onay kutusuna <strong>DELETE</strong> yaz.</li>
+  <li>Kırmızı <strong>Verilerimi temizle</strong> butonuna dokun.</li>
+</ol>
+<p>Uygulama şunları yapar:</p>
+<ul>
+  <li>Profilini siler (yaş, kilo, hedefler vb.)</li>
+  <li>Aktif antrenman planını siler</li>
+  <li>Tüm ilerleme kayıtlarını siler (tamamlanan antrenmanlar, kilo logları)</li>
+  <li>Tercihlerini siler (dil, tema, varsa AI Koç API anahtarı)</li>
+  <li>Seni dil seçim ekranına geri götürür — taze kurulum gibi</li>
+</ul>
+
+<h2>Seçenek B — Uygulamayı kaldır</h2>
+<p>Herhangi bir nedenle uygulamayı açamıyorsan, onu telefondan kaldırmak da yerel olarak tutulan tüm verileri kaldırır.</p>
+
+<h3>iOS (iPhone / iPad)</h3>
+<ol>
+  <li>Ana ekranda Body ReWork simgesine uzun bas.</li>
+  <li><strong>Uygulamayı Kaldır</strong> → <strong>Uygulamayı Sil</strong> → <strong>Sil</strong>'e dokun.</li>
+</ol>
+
+<h3>Android</h3>
+<ol>
+  <li>Body ReWork simgesine uzun bas.</li>
+  <li><strong>Uygulama bilgisi</strong>'ne dokun (veya ⓘ simgesi).</li>
+  <li><strong>Depolama ve önbellek</strong> → <strong>Depolamayı temizle</strong> (uygulamayı tutarken verileri silmek için) ya da geri çık ve <strong>Kaldır</strong>'a bas (uygulamayı tamamen kaldırmak için).</li>
+</ol>
+
+<h2>Peki ya sunucularınız?</h2>
+<p>Sunucu yok. Body ReWork'ün arka ucu yok, bilgilerini tutan bir veritabanı yok, olay toplayan bir analitik servisi yok. Yukarıdaki silme yöntemleri verilerinin bulunabileceği tek yer — silinecek başka bir yer yok.</p>
+
+<h2>Silinmeyenler</h2>
+<ul>
+  <li><strong>Ücretsiz Google Gemini API anahtarı</strong> (eğer oluşturduysan) — o anahtar aistudio.google.com'da kendi Google hesabına kayıtlıdır. İptal etmek istersen <a href="https://aistudio.google.com/app/apikey" target="_blank">aistudio.google.com/app/apikey</a>'ye git ve oradan sil. (Bizim erişimimiz yok; uygulamayı temizlemek yalnızca yerel kopyayı kaldırır.)</li>
+  <li><strong>App Store / Play Store yükleme kaydı</strong> — Apple ve Google uygulamayı indirdiğine dair bir kayıt tutar. Bu normaldir ve bizim kontrolümüz dışındadır.</li>
+</ul>
+
+<h2>İletişim</h2>
+<div class="contact-box">
+  <h3>Veri kaldırmayla ilgili sorular?</h3>
+  <p class="email">burakerolonline@gmail.com</p>
+  <p style="font-size: 13px; margin-top: 12px;">30 gün içinde yanıtlamayı hedefliyoruz.</p>
 </div>
 </div>
 
